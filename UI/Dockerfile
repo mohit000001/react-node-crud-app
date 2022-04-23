@@ -7,13 +7,7 @@ WORKDIR /app/Crud-App-Frontend-React
 RUN echo "Installing dependencies...."
 RUN npm install
 RUN echo "Dependencies Done."
-RUN echo "Creating Production Build...."
-RUN npm run build
-RUN echo "Build Created."
-RUN echo "Installing Server...."
-RUN npm install -g serve
-RUN echo "Server Installed."
 RUN echo "Starting Server...."
 EXPOSE 80
-RUN serve -s build -l 80
+RUN npm run prod-server
 RUN echo "Server Setup Done."
