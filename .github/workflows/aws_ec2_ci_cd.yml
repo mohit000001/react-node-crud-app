@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Loging into EC2 Instance
-        run: ssh -i ${{ AWS_EC2_SSH_KEY }} ubuntu@ec2-15-207-222-168.ap-south-1.compute.amazonaws.com
+        run: ssh -i ${{ secrets.AWS_EC2_SSH_KEY }} ubuntu@ec2-15-207-222-168.ap-south-1.compute.amazonaws.com
