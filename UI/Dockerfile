@@ -15,3 +15,4 @@ RUN echo "Server Installed."
 RUN echo "Starting Server...."
 EXPOSE 80
 RUN serve -s build -l 80
+RUN echo "Server Setup Done."
