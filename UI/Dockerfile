@@ -3,8 +3,9 @@ WORKDIR /app
 RUN echo "Cloning UI...."
 RUN git clone https://github.com/mohit000001/Crud-App-Frontend-React.git
 RUN echo "Cloning Done."
+WORKDIR /app/Crud-App-Frontend-React
 RUN echo "Installing dependencies...."
-RUN cd Crud-App-Frontend-React && npm install
+RUN npm install
 RUN echo "Dependencies Done."
 RUN echo "Creating Production Build...."
 RUN npm run build
