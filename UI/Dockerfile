@@ -9,5 +9,5 @@ RUN npm install
 RUN echo "Dependencies Done."
 RUN echo "Starting Server...."
 EXPOSE 80
-RUN npm run prod-server
+CMD ["npm", "run", "prod-server"]
 RUN echo "Server Setup Done."
