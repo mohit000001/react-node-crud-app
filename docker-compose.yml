@@ -1,12 +1,14 @@
 services:
   ui:
      build: ./UI
+     image: mohitswami/react-node-crud-app
      ports: 
      - "80:80"
      depends_on:
      - api
   api:
     build: ./Service
+    image: mohitswami/react-node-crud-app
     ports:
     - "9000:9000"
     depends_on:
